@@ -1,7 +1,6 @@
 {
     "version": "0.2.0",
     "configurations": [
-        
         {
             "name": "Debug Tests",
             "type": "debugpy",
@@ -50,7 +49,11 @@
                 "PYTHONPATH": "${workspaceFolder}"
             },
             "args": [
-                "--debug", "--max_plan_iterations", "1", "--max_step_num", "1"
+                "--debug",
+                "--max_plan_iterations",
+                "1",
+                "--max_step_num",
+                "1"
             ]
         },
         {
@@ -110,12 +113,15 @@
             ],
             "cwd": "${workspaceFolder}/web",
             "console": "integratedTerminal"
-        },
+        }
     ],
     "compounds": [
         {
             "name": "Launch Deerflow",
-            "configurations": ["Debug: python server", "Debug: nodejs web"]
+            "configurations": [
+                "Debug: python server",
+                "Debug: nodejs web"
+            ]
         }
     ]
 }
